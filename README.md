@@ -2,5 +2,5 @@
 
 Django CRUD con Autenticacion y Despliegue en render.com (Login,Register, Rutas protegidas)
 
-Tutorial Fazt
+Tutorial by Fazt
  
