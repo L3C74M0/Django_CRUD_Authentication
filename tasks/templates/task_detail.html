@@ -3,4 +3,12 @@
 {% block content %}
   <h1>{{ task.title }}</h1>
 
+  {{ error }}
+
+  <form action="" method="post">
+    {% csrf_token %}
+    
+    {{ form.as_p }}
+    <button>Save</button>
+  </form>
 {% endblock %}
