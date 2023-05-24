@@ -9,12 +9,13 @@
       <li>
         <a href="{% url 'task_detail' task.id %}">
           {% if task.status %}
-            <h2>{{ task.title }}</h2>
+            <b style="font-size: 20px;">{{ task.title }}</b>
           {% else %}
-            <h3>{{ task.title }}</h3>
+            <b style="font-size: 18px;">{{ task.title }}</b>
           {% endif %}
-          <p>{{ task.description }}</p>
-          <p>{{ task.user.username }}</p>
+            <p>{{ task.description }}</p>
+            <p>{{ task.user.username }}</p>
+            <p>{{ task.dateCompleted|date:'M j Y:i' }}</p>
         </a>
       </li>
     {% endfor %}
