@@ -1,6 +1,15 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-  <h1>Home</h1> 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi optio ad nulla voluptatibus recusandae odio maiores corporis quam soluta alias explicabo, placeat aliquam distinctio consequuntur. At perferendis voluptatum libero dignissimos.</p>
+  <main class="container py-5">
+    <section class="card card-body">
+      <h1 class="text-center">Home</h1> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, aliquid perferendis? Dolore minus illum iure enim, nam exercitationem iusto itaque sequi deserunt eos eum maxime cupiditate similique, nesciunt ipsa tenetur sint molestias accusamus vitae fugiat eaque officia ab doloremque sunt. Nesciunt perspiciatis error blanditiis impedit amet aperiam enim provident quisquam labore rerum sunt eius quas eveniet architecto fugiat nisi, unde incidunt adipisci ipsum eos? Deleniti vitae itaque tempora quis quaerat ab aut a quasi dolorem cupiditate nisi laudantium, nulla accusantium autem tenetur nihil corrupti quae dolores. Qui eos ratione consectetur molestiae totam aperiam nam, accusamus tempora dolorum, vero ad ab.</p>
+
+      <div class="text-center">
+        <a class="btn btn-dark" href="{% url 'signup' %}">Signup</a>
+        <a class="btn btn-dark" href="{% url 'login' %}">Login</a>
+      </div>
+    </section>
+  </main>
 {% endblock %}

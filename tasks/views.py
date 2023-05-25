@@ -40,7 +40,8 @@ def singup(request):
 def tasks(request):
   tasks = Task.objects.filter(user=request.user, dateCompleted__isnull=True)
   return render(request, 'tasks.html', {
-    'tasks': tasks
+    'tasks': tasks,
+    'title': "Task Pending"
   })
 
 
@@ -48,7 +49,8 @@ def tasks(request):
 def tasks_completed(request):
   tasks = Task.objects.filter(user=request.user, dateCompleted__isnull=False).order_by('-dateCompleted')
   return render(request, 'tasks.html', {
-    'tasks': tasks
+    'tasks': tasks,
+    'title': "Task Completed"
   })
 
 
